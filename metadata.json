@@ -1,0 +1,5 @@
+{
+  "name": "Copy of InboxCleanse - AI Subscription Manager",
+  "description": "A simulation of a Chrome Extension that uses Gemini AI to intelligently scan email subjects and snippets to identify and clean up subscriptions and newsletters.",
+  "requestFramePermissions": []
+}

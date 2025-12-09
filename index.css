@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure extension sits above everything */
+#inbox-cleanse-root {
+  position: fixed;
+  z-index: 99999;
+}
