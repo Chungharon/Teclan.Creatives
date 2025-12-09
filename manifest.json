@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "InboxCleanse AI",
+  "version": "1.0",
+  "description": "AI-powered subscription cleaner for Gmail",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://mail.google.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*"],
+      "matches": ["https://mail.google.com/*"]
+    }
+  ]
+}
